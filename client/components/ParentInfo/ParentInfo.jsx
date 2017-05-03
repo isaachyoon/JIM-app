@@ -1,16 +1,16 @@
 import React from 'react';
 
 
-export default class StudentInfo extends React.Component {
+export default class ParentInfo extends React.Component {
 	
 	constructor() {
 		super()
 
 		this.state = {
-			studentFirstName: '',
-			studentLastName: '',
-			studentEmail: '',
-			studentPhone: '',
+			ParentFirstName: '',
+			ParentLastName: '',
+			ParentEmail: '',
+			ParentPhone: ''
 		}
 
 	}
@@ -18,26 +18,26 @@ export default class StudentInfo extends React.Component {
   render() {
     return (
         <div style={{textAlign: 'center'}}>
-          <h1>Student Info</h1>
+          <h1>Parent Info</h1>
           <form>
 					  <label>
 					    First Name: 
-					    <input type="text" name="Student First Name" />
+					    <input type="text" name="Parent First Name" />
 					  </label>
 					  <br />
 					  <label>
 					    Last Name: 
-					    <input type="text" name="Student Last Name" />
+					    <input type="text" name="Parent Last Name" />
 					  </label>
 					  <br />
 					  <label>
 					    E-mail: 
-					    <input type="text" name="Student E-mail" />
+					    <input type="text" name="Parent E-mail" />
 					  </label>
 					  <br />
 					  <label>
 					    Phone Number: 
-					    <input type="text" name="Student Phone Number" />
+					    <input type="text" name="Parent Phone Number" />
 					  </label>
 					  <br />
 					  <input type="submit" value="Submit" />
