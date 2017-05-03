@@ -1,6 +1,8 @@
 
 import React from 'react';
+
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+// import test from '../../assets/test.png'
 
 
 export default class StudentInfo extends React.Component {
@@ -24,6 +26,7 @@ export default class StudentInfo extends React.Component {
 
 
         <div>
+
           <h1>Student Info</h1>
           <form>
 					  <label>
@@ -61,3 +64,4 @@ export default class StudentInfo extends React.Component {
   }
 
 }
+				<Route path = '/health' component = {HealthTransportation} />

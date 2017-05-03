@@ -37,7 +37,7 @@ export default class DemographicVolunteerInfo extends React.Component {
 
   handleChange(event) {
     this.setState({Education: event.target.value});
-  }  
+  }
 
   render() {
     return (
@@ -164,6 +164,7 @@ export default class DemographicVolunteerInfo extends React.Component {
             <input type="submit" value="Submit" />
           </Link>
         </form>
+
       </div>
     );
   }
