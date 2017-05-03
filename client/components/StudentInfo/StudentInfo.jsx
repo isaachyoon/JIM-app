@@ -1,7 +1,5 @@
 
 import React from 'react';
-import DemographicVolunteer from '../DemographicVolunteerInfo/index.jsx';
-// import HealthTransportation from './HealthTransportationInfo/index.jsx';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 
 
