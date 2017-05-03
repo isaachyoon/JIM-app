@@ -1,9 +1,15 @@
 import React from 'react';
 
+<<<<<<< HEAD
 import StudentInfo from './StudentInfo/StudentInfo.jsx'
 import ParentInfo from './ParentInfo/ParentInfo.jsx'
 import DemographicVolunteerInfo from './DemographicVolunteerInfo/DemographicVolunteerInfo.jsx'
+=======
+import StudentInfo from './StudentInfo/index.jsx'
+>>>>>>> implement react-router
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import DemographicVolunteer from './DemographicVolunteerInfo/index.jsx';
+
 
 
 
@@ -12,18 +18,22 @@ export default class App extends React.Component {
 	constructor() {
 
 		super()
-
-		this.state = {
-			view: 'home'
-		}
-
 	}
 
 
 
 
   render() {
+		return (
+			<Router>
+				<div>
+					<Route exact path = '/' component = {StudentInfo}/>
+					<Route path = '/demographic' component = {DemographicVolunteer}/>
 
+				</div>
+			</Router>
+
+<<<<<<< HEAD
   	if (this.state.view === 'home') {
 			return (
 				<div style={{textAlign: 'center'}}>
@@ -49,6 +59,15 @@ export default class App extends React.Component {
 			)
   	}
   }
+=======
+>>>>>>> implement react-router
 
+		)
+  }
 }
 
+		// <ul>
+		// 				<li><Link to ="/"> studentINfo </Link></li>
+		// 				<li><Link to ="/demographic"> demongraphic </Link></li>
+		// 				<li><Link to ="/health"> healthTrans </Link></li>
+		// 			</ul>
