@@ -7,6 +7,7 @@
   "author": "Michael <comesm@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "docusign-esign": "3.0.0",
     "html-webpack-plugin": "^2.28.0",
     "material-ui": "^0.18.0",
     "path": "^0.12.7",
