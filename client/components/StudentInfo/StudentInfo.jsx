@@ -1,6 +1,11 @@
 
 import React from 'react';
+import {render} from 'react-dom';
+import DemographicVolunteer from '../DemographicVolunteerInfo/DemographicVolunteerInfo.jsx';
+// import HealthTransportation from './HealthTransportationInfo/index.jsx';
+
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+// import test from '../../assets/test.png'
 
 
 export default class StudentInfo extends React.Component {
@@ -28,6 +33,7 @@ export default class StudentInfo extends React.Component {
 
 
         <div style={{textAlign: 'center'}}>
+
           <h1>Student Info</h1>
           <form>
 					  <label>

@@ -1,11 +1,8 @@
 import React from 'react';
-
 import StudentInfo from './StudentInfo/StudentInfo.jsx'
 import ParentInfo from './ParentInfo/ParentInfo.jsx'
 import DemographicVolunteerInfo from './DemographicVolunteerInfo/DemographicVolunteerInfo.jsx'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
-
-
 
 
 export default class App extends React.Component {
@@ -14,9 +11,6 @@ export default class App extends React.Component {
 
 		super()
 	}
-
-
-
 
   render() {
 		return (
@@ -27,15 +21,7 @@ export default class App extends React.Component {
 					<Route path = '/parentInfo' component = {ParentInfo}/>
 				</div>
 			</Router>
-
-
-
 		)
   }
 }
 
-		// <ul>
-		// 				<li><Link to ="/"> studentINfo </Link></li>
-		// 				<li><Link to ="/demographic"> demongraphic </Link></li>
-		// 				<li><Link to ="/health"> healthTrans </Link></li>
-		// 			</ul>

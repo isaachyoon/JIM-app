@@ -17,7 +17,8 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/}
+      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/},
+      { test: /\.json$/, use: 'json-loader'}
     ]
   },
   devServer: {
