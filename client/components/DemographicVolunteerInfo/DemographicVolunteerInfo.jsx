@@ -57,7 +57,7 @@ export default class DemographicVolunteerInfo extends React.Component {
 
   handleChange(event) {
     this.setState({Education: event.target.value});
-  }  
+  }
 
   render() {
     return (
@@ -133,6 +133,7 @@ export default class DemographicVolunteerInfo extends React.Component {
             <RaisedButton label="Continue to Next Step" backgroundColor={orange500} />
           </Link>
         </form>
+
       </div>
     );
   }

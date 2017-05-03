@@ -1,5 +1,6 @@
 
 import React from 'react';
+
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
@@ -26,6 +27,8 @@ const styles = {
   	width: 400,
   }
 }
+
+
 
 export default class StudentInfo extends React.Component {
 
@@ -77,6 +80,36 @@ export default class StudentInfo extends React.Component {
 				 </Link>
       </div>
 
+        <div>
+
+          <h1>Student Info</h1>
+          <form>
+					  <label>
+					    First Name:
+					    <input type="text" name="Student First Name" />
+					  </label>
+					  <br />
+					  <label>
+					    Last Name:
+					    <input type="text" name="Student Last Name" />
+					  </label>
+					  <br />
+					  <label>
+					    E-mail:
+					    <input type="text" name="Student E-mail" />
+					  </label>
+					  <br />
+					  <label>
+					    Phone Number:
+					    <input type="text" name="Student Phone Number" />
+					  </label>
+					  <br />
+					 <Link to='/parentinfo'>
+					  <input type="submit" value="Submit" />
+					 </Link>
+					</form>
+
+        </div>
 
 
 
@@ -86,3 +119,4 @@ export default class StudentInfo extends React.Component {
   }
 
 }
+				<Route path = '/health' component = {HealthTransportation} />

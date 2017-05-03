@@ -9,16 +9,12 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 
 
-
 export default class App extends React.Component {
 
 	constructor() {
 
 		super()
 	}
-
-
-
 
   render() {
 		return (
@@ -39,3 +35,4 @@ export default class App extends React.Component {
 		)
   }
 }
+
