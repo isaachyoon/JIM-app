@@ -159,7 +159,9 @@ export default class DemographicVolunteerInfo extends React.Component {
             <option value="HSorGED">High School diploma or GED</option>
           </select>
         </label>
-        <input type="submit" value="Submit" />
+        <Link to = 'parentInfo'>
+          <input type="submit" value="Submit" />
+        </Link>
       </form>
       </div>
     );
