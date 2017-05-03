@@ -1,4 +1,6 @@
 import React from 'react'
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+
 
 export default class DemographicVolunteerInfo extends React.Component {
   constructor(props) {
@@ -36,7 +38,7 @@ export default class DemographicVolunteerInfo extends React.Component {
 
   handleChange(event) {
     this.setState({Education: event.target.value});
-  }  
+  }
 
   render() {
     return (
@@ -159,7 +161,9 @@ export default class DemographicVolunteerInfo extends React.Component {
             <option value="HSorGED">High School diploma or GED</option>
           </select>
         </label>
+        <Link to = 'parentInfo'>
         <input type="submit" value="Submit" />
+        </Link>
       </form>
       </div>
     );
