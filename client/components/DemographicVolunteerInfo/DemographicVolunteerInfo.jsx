@@ -1,5 +1,25 @@
 import React from 'react'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import Checkbox from 'material-ui/Checkbox';
+import ActionFavorite from 'material-ui/svg-icons/action/favorite';
+import ActionFavoriteBorder from 'material-ui/svg-icons/action/favorite-border';
+import Visibility from 'material-ui/svg-icons/action/visibility';
+import VisibilityOff from 'material-ui/svg-icons/action/visibility-off';
+import RaisedButton from 'material-ui/RaisedButton';
+import {orange500} from 'material-ui/styles/colors';
+import DropDownMenu from 'material-ui/DropDownMenu';
+import MenuItem from 'material-ui/MenuItem';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
+const styles = {
+  block: {
+    maxWidth: 250,
+  },
+  checkbox: {
+    marginBottom: 16,
+  },
+};
+
 
 export default class DemographicVolunteerInfo extends React.Component {
   constructor(props) {
@@ -44,124 +64,73 @@ export default class DemographicVolunteerInfo extends React.Component {
       <div>
         <form>
           Which best describes your child or ward? (Please select all that apply)
-          <br />
-          <label>
-            <input
-              name="AfricanAmerican"
-              type="checkbox"
-              checked={this.state.AfricanAmerican}
-              onChange={this.handleInputChange} />
-            African American
-          </label>
-          <br />
-          <label>
-            <input
-              name="Asian"
-              type="checkbox"
-              checked={this.state.Asian}
-              onChange={this.handleInputChange} />
-            Asian
-          </label>
-          <br />
-          <label>
-            <input
-              name="PacificIslander"
-              type="checkbox"
-              checked={this.state.PacificIslander}
-              onChange={this.handleInputChange} />
-            Native Hawaiian / Pacific Islander
-          </label>
-          <br />
-          <label>
-            <input
-              name="AmericanIndian"
-              type="checkbox"
-              checked={this.state.AmericanIndian}
-              onChange={this.handleInputChange} />
-            American Indian / Alaska
-          </label>
-          <br />
-          <label>
-            <input
-              name="Caucasian"
-              type="checkbox"
-              checked={this.state.Caucasian}
-              onChange={this.handleInputChange} />
-            Caucasian (non-European)
-          </label>
-          <br />
-          <label>
-            <input
-              name="Hispanic"
-              type="checkbox"
-              checked={this.state.Hispanic}
-              onChange={this.handleInputChange} />
-            Hispanic
-          </label>
-          <br />
-          <label>
-            <input
-              name="Decline"
-              type="checkbox"
-              checked={this.state.Decline}
-              onChange={this.handleInputChange} />
-            Decline to answer
-          </label>
+          <Checkbox
+            label="African American"
+            style={styles.checkbox}
+            />
+          <Checkbox
+            label="Asian"
+            style={styles.checkbox}
+            />
+          <Checkbox
+            label="PacificIslander"
+            style={styles.checkbox}
+            />
+          <Checkbox
+            label="AmericanIndian"
+            style={styles.checkbox}
+            />
+          <Checkbox
+            label="Caucasian"
+            style={styles.checkbox}
+            />
+          <Checkbox
+            label="Hispanic"
+            style={styles.checkbox}
+            />
+          <Checkbox
+            label="Decline"
+            style={styles.checkbox}
+            />
+          <Checkbox
+            label="AmericanIndian"
+            style={styles.checkbox}
+            />
         </form>
         <form>
           Please choose any terms that apply to your family:
-          <br />
-          <label>
-            <input
-              name="Refugee"
-              type="checkbox"
-              checked={this.state.Refugee}
-              onChange={this.handleInputChange} />
-              Refugee (you left your country to escape persection and/or war)
-          </label>
-          <br />
-          <label>
-            <input
-              name="Immigrant"
-              type="checkbox"
-              checked={this.state.Immigrant}
-              onChange={this.handleInputChange} />
-              Immigrant
-          </label>
+          <Checkbox
+            label="Refugee (you left your country to escape persection and/or war)"
+            style={styles.checkbox}
+            />
+          <Checkbox
+            label="Immigrant"
+            style={styles.checkbox}
+            />
         </form>
         <form>
           Does your child have any special needs that TechBridge needs to be aware of?
-          <br />
-          <label>
-            <input
-              name="SpecialNeedsYes"
-              type="checkbox"
-              checked={this.state.SpecialNeedsYes}
-              onChange={this.handleInputChange} />
-              Yes
-          </label>
-          <br />
-          <label>
-            <input
-              name="SpecialNeedsNo"
-              type="checkbox"
-              checked={this.state.SpecialNeedsNo}
-              onChange={this.handleInputChange} />
-              No
-          </label>
+          <Checkbox
+            label="Yes"
+            style={styles.checkbox}
+            />
+          <Checkbox
+            label="No"
+            style={styles.checkbox}
+            />
           </form>
           <form onSubmit={this.handleSubmit}>
           <label>
             How far did you go in school?
             <br />
-            <select value={this.state.Education} onChange={this.handleChange}>
-              <option value="elementarySchool">Elementary School</option>
-              <option value="middleSchool">Middle School</option>
-              <option value="HSorGED">High School diploma or GED</option>
-            </select>
+            <DropDownMenu value={"Select one"} onChange={this.handleChange}>
+              <MenuItem value={1} primaryText="Elementary School" />
+              <MenuItem value={2} primaryText="Middle School" />
+            </DropDownMenu>
           </label>
+          <br />
           <Link to='/healthinfo'>
-            <input type="submit" value="Submit" />
+            <RaisedButton label="Continue to Next Step" backgroundColor={orange500} />
           </Link>
         </form>
       </div>

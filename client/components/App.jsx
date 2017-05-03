@@ -5,6 +5,7 @@ import ParentInfo from './ParentInfo/ParentInfo.jsx'
 import DemographicVolunteerInfo from './DemographicVolunteerInfo/DemographicVolunteerInfo.jsx'
 import HealthTransportationInfo from './HealthTransportationInfo/HealthTransportationInfo.jsx'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 
 
@@ -21,6 +22,8 @@ export default class App extends React.Component {
 
   render() {
 		return (
+
+		<MuiThemeProvider>
 			<Router>
 				<div>
 					<Route exact path = '/' component = {StudentInfo}/>
@@ -30,6 +33,7 @@ export default class App extends React.Component {
 
 				</div>
 			</Router>
+		</MuiThemeProvider>
 
 
 		)

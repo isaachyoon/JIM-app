@@ -14,10 +14,15 @@ module.exports = {
     filename: 'index_bundle.js',
     publicPath: '/'
   },
+  devtool: 'source-map',
   module: {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/}
+      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/},
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      }
     ]
   },
   devServer: {
