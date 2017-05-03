@@ -26,6 +26,7 @@ const styles = {
   	color: '#fff',
   	width: 400,
   }
+
 }
 
 
@@ -50,13 +51,14 @@ export default class StudentInfo extends React.Component {
     return (
 
       <div>
+      	<img src = '/client/assets/1.png' width = "300"/>
         <h1>Student Info</h1>
 			    <TextField
 			   	 	name="Student First Name"
 			   	 	floatingLabelText="First Name"
 				    underlineFocusStyle={styles.underlineStyle}
-				    floatingLabelFocusStyle={styles.floatingLabelFocusStyle} 
-				   /><br />	    
+				    floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+				   /><br />
 				   <TextField
 			   	 	name="Student Last Name"
 			   	 	floatingLabelText="Last Name"
@@ -80,43 +82,9 @@ export default class StudentInfo extends React.Component {
 				 </Link>
       </div>
 
-        <div>
-
-          <h1>Student Info</h1>
-          <form>
-					  <label>
-					    First Name:
-					    <input type="text" name="Student First Name" />
-					  </label>
-					  <br />
-					  <label>
-					    Last Name:
-					    <input type="text" name="Student Last Name" />
-					  </label>
-					  <br />
-					  <label>
-					    E-mail:
-					    <input type="text" name="Student E-mail" />
-					  </label>
-					  <br />
-					  <label>
-					    Phone Number:
-					    <input type="text" name="Student Phone Number" />
-					  </label>
-					  <br />
-					 <Link to='/parentinfo'>
-					  <input type="submit" value="Submit" />
-					 </Link>
-					</form>
-
-        </div>
-
-
-
-
       );
 
   }
 
 }
-				<Route path = '/health' component = {HealthTransportation} />
+

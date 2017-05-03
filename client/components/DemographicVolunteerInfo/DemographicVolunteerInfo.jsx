@@ -62,7 +62,10 @@ export default class DemographicVolunteerInfo extends React.Component {
   render() {
     return (
       <div>
+        <img src = '/client/assets/3.png' width = "300"/>
+
         <form>
+
           Which best describes your child or ward? (Please select all that apply)
           <Checkbox
             label="African American"

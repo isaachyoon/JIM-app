@@ -29,7 +29,7 @@ const styles = {
 }
 
 export default class ParentInfo extends React.Component {
-	
+
 	constructor() {
 		super()
 
@@ -49,19 +49,20 @@ export default class ParentInfo extends React.Component {
 
 	handleChange(event) {
     this.setState({PreferredContact: event.target.value});
-  }  
+  }
 
   render() {
     return (
         <div>
+          <img src = '/client/assets/2.png' width = "300"/>
           <h1>Parent Info</h1>
           <form>
   			    <TextField
 			   	 	name="Parent First Name"
 			   	 	floatingLabelText="First Name"
 				    underlineFocusStyle={styles.underlineStyle}
-				    floatingLabelFocusStyle={styles.floatingLabelFocusStyle} 
-				   /><br />	    
+				    floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+				   /><br />
 				   <TextField
 			   	 	name="Parent Last Name"
 			   	 	floatingLabelText="Last Name"

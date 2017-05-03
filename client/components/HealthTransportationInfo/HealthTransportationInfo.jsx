@@ -26,6 +26,8 @@ export default class HealthTransportationInfo extends React.Component {
 
 
         <div>
+          <img src = '/client/assets/4.png' width = "300" />
+
           <h1>Health Info</h1>
           <form>
 					  <label>
@@ -49,7 +51,7 @@ export default class HealthTransportationInfo extends React.Component {
 					  </label>
 					  <br />
 					  <label>
-					    Emergency contact phone number: 
+					    Emergency contact phone number:
 					    <input type="text" name="EmergencyPhoneNumber" />
 					  </label>
 					  <br />
