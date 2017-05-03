@@ -1,7 +1,6 @@
 import React from 'react'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 
-
 export default class DemographicVolunteerInfo extends React.Component {
   constructor(props) {
     super(props);
@@ -163,6 +162,7 @@ export default class DemographicVolunteerInfo extends React.Component {
         </label>
         <Link to = 'parentInfo'>
         <input type="submit" value="Submit" />
+
         </Link>
       </form>
       </div>
