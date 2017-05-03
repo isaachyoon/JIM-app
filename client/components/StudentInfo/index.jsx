@@ -1,9 +1,7 @@
-
 import React from 'react';
 import DemographicVolunteer from '../DemographicVolunteerInfo/index.jsx';
 // import HealthTransportation from './HealthTransportationInfo/index.jsx';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
-
 
 export default class StudentInfo extends React.Component {
 
@@ -14,7 +12,7 @@ export default class StudentInfo extends React.Component {
 			studentFirstName: '',
 			studentLastName: '',
 			studentEmail: '',
-			studentPhone: ''
+			studentPhone: '',
 		}
 
 	}
@@ -27,7 +25,6 @@ export default class StudentInfo extends React.Component {
 
 
     return (
-
 
         <div style={{textAlign: 'center'}}>
           <h1>Student Info</h1>
