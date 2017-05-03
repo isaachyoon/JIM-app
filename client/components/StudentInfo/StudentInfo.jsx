@@ -1,8 +1,5 @@
 
 import React from 'react';
-import {render} from 'react-dom';
-import DemographicVolunteer from '../DemographicVolunteerInfo/DemographicVolunteerInfo.jsx';
-// import HealthTransportation from './HealthTransportationInfo/index.jsx';
 
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 // import test from '../../assets/test.png'
@@ -22,17 +19,13 @@ export default class StudentInfo extends React.Component {
 
 	}
 
-	nextPage() {
-
-	}
-
   render() {
 
 
     return (
 
 
-        <div style={{textAlign: 'center'}}>
+        <div>
 
           <h1>Student Info</h1>
           <form>
@@ -56,8 +49,8 @@ export default class StudentInfo extends React.Component {
 					    <input type="text" name="Student Phone Number" />
 					  </label>
 					  <br />
-					 <Link to = '/Demographic'>
-					  <input type="submit" value="Submit" onClick = {this.nextPage.bind(this)} />
+					 <Link to='/parentinfo'>
+					  <input type="submit" value="Submit" />
 					 </Link>
 					</form>
 
@@ -71,6 +64,4 @@ export default class StudentInfo extends React.Component {
   }
 
 }
-
-// <Route path = '/demographic' component = {DemographicVolunteer} />
-// 					<Route path = '/health' component = {HealthTransportation} />
+				<Route path = '/health' component = {HealthTransportation} />

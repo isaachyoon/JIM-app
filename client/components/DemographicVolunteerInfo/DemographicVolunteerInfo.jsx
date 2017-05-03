@@ -149,22 +149,22 @@ export default class DemographicVolunteerInfo extends React.Component {
               onChange={this.handleInputChange} />
               No
           </label>
+          </form>
+          <form onSubmit={this.handleSubmit}>
+          <label>
+            How far did you go in school?
+            <br />
+            <select value={this.state.Education} onChange={this.handleChange}>
+              <option value="elementarySchool">Elementary School</option>
+              <option value="middleSchool">Middle School</option>
+              <option value="HSorGED">High School diploma or GED</option>
+            </select>
+          </label>
+          <Link to='/healthinfo'>
+            <input type="submit" value="Submit" />
+          </Link>
         </form>
-        <form onSubmit={this.handleSubmit}>
-        <label>
-          How far did you go in school?
-          <br />
-          <select value={this.state.Education} onChange={this.handleChange}>
-            <option value="elementarySchool">Elementary School</option>
-            <option value="middleSchool">Middle School</option>
-            <option value="HSorGED">High School diploma or GED</option>
-          </select>
-        </label>
-        <Link to = 'parentInfo'>
-        <input type="submit" value="Submit" />
 
-        </Link>
-      </form>
       </div>
     );
   }
